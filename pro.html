@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script type='text/javascript' src='js/jquery.particleground.js'></script>
+    <script type='text/javascript' src='js/demo.js'></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- #navbar -->
+    <navbar class="navbar">
+        <div class="nav-logo">
+            <span class="eicon-logo"></span>
+        </div>
+        <ul class="navbar-container">
+            <li class="nav-ithem">خانه</li>
+            <li class="nav-ithem">محصولات</li>
+            <li class="nav-ithem">گارانتی</li>
+            <li class="nav-ithem">درباره ما</li>
+            <li class="nav-ithem">تماس با ما</li>
+        </ul>
+        <div class="search">
+            <div class="icon-search">
+              <span class="eicon-search"></span>
+            </div>
+            <input placeholder="جستجو در بین محصولات" type="text">
+        </div>   
+    </navbar>
+    <!-- #navbar -->
+
+    <!--#pro-->
+    <div class="pro-container">
+        <div class="pro">
+            <div class="product-small-img">
+                <img src="./img/img1.jpeg" alt="" onclick="myFunction(this)">
+                <img src="./img/img2.jpeg" alt="" onclick="myFunction(this)">
+                <img src="./img/img3.jpeg" alt="" onclick="myFunction(this)">
+                <img src="./img/img1.jpeg" alt="" onclick="myFunction(this)">
+            </div>
+    
+            <div class="img-container">
+                <img id="imageBox" src="./img/img1.jpeg" alt="">
+            </div>
+        </div>
+        <div class="pro-info">
+            <h2>میز عسلی</h2>
+            <h3 class="price">۱۱،۹۳۰،۰۰۰ تومان</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+            <h3>دسته: مبلمان، ال</h3>
+            <h3>اندازه</h3>
+            <div class="size">
+                <button class="btn" onclick="sizeFunction(this)">۲ نفره</button>
+                <button class="btn" onclick="sizeFunction(this)">۳ نفره</button>
+                <button class="btn" onclick="sizeFunction(this)">۴ نفره</button>
+            </div>
+            <h3>رنگ بندی</h3>
+            <div class="proColor pro-color">
+                <span class="pro-color-span"></span>
+                <span class="pro-color-span"></span>
+                <span class="pro-color-span"></span>
+            </div>
+            <button class="call">تماس با ما</button>
+        </div>
+    </div>
+    
+    <!--#pro-->
+
+    <!--#proDelaile-->
+    <div class="pro-title">
+        <h4 onclick="tabs(0)"  class="slide slideActive">مشخصات</h4>
+        <h4 onclick="tabs(1)"  class="slide ">معرفی</h4>
+        <h4 onclick="tabs(2)"  class="slide ">گارانتی</h4>
+        <h4 onclick="tabs(3)"  class="slide ">آموزش اسمبل</h4>
+    </div>
+    <div class="pro-particulars projectShow">
+        <table>
+            <tr>
+                <th>وزن</th>
+                <th>۵۰ کیلوگرم</th>
+            </tr>
+            <tr>
+                <th>وزن</th>
+                <th>۵۰ کیلوگرم</th>
+            </tr>
+            <tr>
+                <th>وزن</th>
+                <th>۵۰ کیلوگرم</th>
+            </tr>
+            <tr>
+                <th>وزن</th>
+                <th>۵۰ کیلوگرم</th>
+            </tr>
+            <tr>
+                <th>وزن</th>
+                <th>۵۰ کیلوگرم</th>
+            </tr>
+        </table>
+    </div>
+    <div class="pro-presentation projectShow">
+        
+        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+    </div>
+    <div class="pro-garanty projectShow">
+        
+        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+    </div>
+    <div class="pro-assemble projectShow">
+        <div class="pro-assemble-text">
+            <h4>آموزش اسمبل کردن</h4>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+        </div>
+        <div class="pro-assemble-video">
+            <video  controls>
+                <source src="./img/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <!--#proDelaile-->
+
+
+
+
+
+    <!-- #product -->
+    <div class="product-container">
+        <div class="product-header">
+            <h3>پرفروش ها</h3>
+            <div class="product-goTo">
+                <p>مشاهده همه</p>
+                <div class="icon-leftArrow">
+                    <span class="eicon-leftArrow"></span>
+                </div>
+            </div>
+        </div>
+        <div class="productCards-container">
+            <div class="product-cards">
+
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                <p>مشاهده همه</p>
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                <p>مشاهده همه</p>
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                <p>مشاهده همه</p>
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                <p>مشاهده همه</p>
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+
+    </div>
+    <!-- #product -->
+
+
+    <!-- #product -->
+    <div class="product-container">
+        <div class="product-header">
+            <h3>پرفروش ها</h3>
+            <div class="product-goTo">
+                <p>مشاهده همه</p>
+                <div class="icon-leftArrow">
+                    <span class="eicon-leftArrow"></span>
+                </div>
+            </div>
+        </div>
+        <div class="productCards-container">
+            <div class="product-cards">
+
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                <p>مشاهده همه</p>
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                <p>مشاهده همه</p>
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                <p>مشاهده همه</p>
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proCard-container">
+                    <div class="proCard-image">
+                        <img src="./img/Screenshot.png" alt="">
+                    </div>
+                    <div class="proCard-main">
+                        <h2>میز عسلی</h2>
+                        
+                        <div class="proColor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="proPrice">
+                            <p>۱۱،۲۵۰،۰۰۰ تومان</p>
+                            <div class="product-goTo">
+                                <p>مشاهده همه</p>
+                                <div class="icon-leftArrow">
+                                    <span class="eicon-leftArrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+
+    </div>
+    <!-- #product -->
+
+
+
+
+     <!--footer-->
+     <div class="footer-container">
+        <div class="footer-header">
+            <div class="footer-logo">
+                <span class="eicon-logo"></span>
+            </div>
+            <div class="footer-text">
+                <p>نیاز به مشاوره دارید؟</p>
+                <button>با ما تماس بگیرید</button>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="info-contact">
+                <ul class="contact-list">
+                    <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</li>
+                    <li>ایران، تهران، شمس آباد، میرداماد، پلاک ۱، واحد ۱۵</li>
+                    <li>۰۲۱-۲۲۳۳۴۴۵۵</li>
+                    <li>info@example.com</li>
+                </ul>
+            </div>
+            <div class="info-menu">
+                <p>دسترسی سریع</p>
+                <ul class="menu-list">
+                    <li>خانه</li>
+                    <li>محصولات</li>
+                    <li>گارنتی</li>
+                    <li>درباه ما</li>
+                    <li>تماس با ما</li>
+                </ul>
+            </div>
+            <div class="info-social">
+                <p>شبکه های اجتماعی</p>
+                <ul class="social-list">
+                    <li>اینستاگرام</li>
+                    <li>توییتر</li>
+                    <li>واتساپ</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="footer-copyRight">
+            <p>©2023Farachoob</p>
+        </div>
+    </div>
+    <!--footer-->
+
+
+
+    <script>
+        function myFunction(smallImg)
+        {
+            var fullImg = document.getElementById("imageBox");
+            fullImg.src = smallImg.src;
+        }
+
+        function sizeFunction(boldText)
+        {
+            boldText.style.opacity = "1"; 
+            boldText.style.fontFamily = "DanaBold";
+        }
+    </script>
+    <script>
+        const pageBtn = document.querySelectorAll(".pages");
+        const project = document.querySelectorAll(".projectShow");
+
+        function tabs(panelIndex) {
+            project.forEach(function(node) {
+                node.style.display="none";
+            });
+            project[panelIndex].style.display="flex";
+        }
+        tabs(0);
+
+        $(".slide").click(function() {
+            $(this).addClass("slideActive").siblings().removeClass("slideActive");
+        })
+    </script>
+</body>
+</html>
